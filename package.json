@@ -1,14 +1,14 @@
 {
-  "homepage":"https://bryancol27.github.io/StateMachinesReact",
+  "homepage": "https://bryancol27.github.io/StateMachinesReact",
   "name": "state-machine",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeply": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
