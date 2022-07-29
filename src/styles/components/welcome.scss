@@ -1,0 +1,38 @@
+.welcome{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-style: oblique;
+        letter-spacing: 5px;
+        color: $pink6;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    &__btn{
+        width: 75%;
+        padding: 25px 0;
+        border: none;
+        border-radius: 20px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $pink5;
+        font-style: oblique;
+        background-color: $white;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover{
+            transition: all .5s;
+            opacity: 0.5;
+            color: $white;
+            background-color: $pink5;
+            transform: scale(1.2);
+        }
+    }
+}

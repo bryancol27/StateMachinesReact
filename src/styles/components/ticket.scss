@@ -1,0 +1,68 @@
+.ticket{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 3.5rem;
+        font-style: oblique;
+        color: $pink6;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    &__example{
+        height: 100px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        border: 2px solid $pink5;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &-destiny{
+            width: 50%;
+            height: 100%;
+            border-right: 2px solid $pink5;
+            display: flex;
+            padding: 0 5px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.8rem;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        &-passengers{
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            padding: 0 0 0 10px;
+            color:$pink5;
+
+            span{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+    &__loading{
+        width: 300px;
+        border-radius: 20px;
+        height: 5px;
+        background-color: $pink5;
+        margin-bottom: 20px;
+        animation: loadingDown 4s ease infinite;
+    }
+}
+
+@keyframes loadingDown {
+    from{
+        width: 300px;
+    }
+    to{
+        width: 0;
+    }
+}
