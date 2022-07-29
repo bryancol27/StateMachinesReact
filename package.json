@@ -1,4 +1,5 @@
 {
+  "homepage":"https://bryancol27.github.io/StateMachinesReact",
   "name": "state-machine",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@xstate/react": "^3.0.0",
